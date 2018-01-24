@@ -1,20 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap Portfolio</title>
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <style>
+        h1.name {
+            color: white;
+            font-family: 'Crimson Text', serif;
+        }
 
+        h1.main {
+            color: #4aaaa5;
+            font-family: 'Crimson Text', serif;
+        }
 
+        h3 {
+            color: #4aaaa5;
+            font-family: 'Crimson Text', serif;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,font-weight:bolder">This will be my Bootstrap Portfolio</p>
+    <div class="container mt-3 border border-secondary bg-light rounded">
+        <div class="row border-bottom bg-white">
+            <div class="col-md-4" style="width:100%; background-color:#4aaaa5;color:white rounded">
+                <h1 class="name p-3">Samantha McCall</h1>
+            </div>
+            <div class="col-md-4 offset-md-4 py-3 pr-3">
+                <p>
+                    <button type="submit" class="btn btn-link btn-lg">
+                        <a href="index.html ">About</a>
+                    </button> |
+
+                    <button type="submit" class="btn btn-link btn-lg">
+                        <a href="portfolio.html ">Portfolio</a>
+                    </button> |
+                    <button type="submit" class="btn btn-link btn-lg">
+                        <a href="contact.html ">Contact</a>
+                    </button>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="my-3 p-3 rounded bg-white border border-info">
+                    <h1 class="main py-3 pr-3 border-bottom">About Me</h1>
+                    <img src="assets/images/sm_headshot.png" class="img-fluid rounded float-left mr-3 mt-3" alt="Responsive image">
+                    <p class="mt-3">As a redheaded, left-handed Scorpio, I was destined to do things differently. I started my career in
+                        print publishing, but once I learned HTML, the immediate gratification of making a correction and
+                        seeing it online in seconds was much better than waiting for books to come back from the printer.</p>
+                    <p>I wish I would've done something like boot camp 10 years ago. I really enjoy it and can't wait to put
+                        what I'm learning to use. I'm ready to move 100% to the IT side, but I think it'll still come in
+                        handy to understand SEO, cross-channel campaigns, etc. Even if you aren't actively using a language
+                        or skill, it's still helpful to understand the lexicon and the synergies between technologies.</p>
+                    <p>When I'm not learning code I'm usually at a concert, because I love live music. The next show I have
+                        tickets for is a first-time festival called Homecoming in Cincinnati that's being put on by my favorite
+                        band, The National. The two-day lineup includes:</p>
+                    <ul>
+                        <li>Father John Misty</li>
+                        <li>Big Thief</li>
+                        <li>Future Islands</li>
+                        <li>Lord Huron</li>
+                        <li>Plus more bands TBA</li>
+                    </ul>
+                    <p>It's going to be an amazing show! And if that's not enough, another band I love, The Decemberists, has
+                        a new album and tour coming in March. I've already got tickets to see them in May at The Uptown,
+                        which should be great too.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="my-3 p-3 rounded bg-white border border-info">
+                    <h3 class="py-3 pr-3 border-bottom">
+                        <span style="font-size:1em; color:#4aaaa5" class="fas fa-hand-point-right" aria-hidden="true"></span> Connect With Me</h3>
+
+                    <a href="https://github.com/green64" target="_blank">
+                        <img src="assets/images/github60.png" class="img-fluid img-thumbnail rounded mt-3" alt="Responsive image My Github profile">
+                    </a>
+                    <a href="https://www.linkedin.com/in/samantha-mccall-44303a6/" target="_blank">
+                        <img src="assets/images/linked_in60.png" class="img-fluid img-thumbnail rounded ml-2 mt-3" alt="Responsive image My LinkedIn profile">
+                    </a>
+                    <a href="https://stackexchange.com/users/11996404/s-mccall" target="_blank">
+                        <img src="assets/images/stack60.png" class="img-fluid img-thumbnail rounded ml-2 mt-3" alt="Responsive image My Stack Exchange profile">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="background-color:#777777">
+            <div class="col-md-6 offset-md-3">
+                <p class="p-3 text-center" style="color:lightgray">Copyright @ 2018 Samantha McCall</p>
+            </div>
+        </div>
+        <!-- container div close nothing below here -->
     </div>
-    
+    <!-- these scripts are required by Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
