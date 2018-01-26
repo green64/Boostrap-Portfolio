@@ -1,20 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-     crossorigin="anonymous">
+    <!-- Google CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <style>
+        h1.name {
+            color: white;
+            font-family: 'Crimson Text', serif;
+        }
 
- <title>Document</title>
+        h1.main {
+            color: #4aaaa5;
+            font-family: 'Crimson Text', serif;
+        }
+
+        h3 {
+            color: #4aaaa5;
+            font-family: 'Crimson Text', serif;
+        }
+
+        h3 {
+            color: #4aaaa5;
+            font-family: 'Crimson Text', serif;
+            font-weight: bold;
+        }
+
+        .thumbnail {
+            position: relative;
+        }
+
+        .caption {
+            position: absolute;
+            top: 65%;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Boostrap Portfolio</title>
 </head>
 
 <body>
- <div class="container">
-     <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,font-weight:bolder">This will be my Bootstrap Portfolio</p>
- </div>
-    
+    <div class="container mt-3 border border-secondary bg-light rounded">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <h1 class="main pr-3">Samantha McCall</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav pl-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html"> Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="my-3 p-3 rounded bg-white border border-info">
+                    <h3 class="main py-3 pr-3 border-bottom">Portfolio</h3>
+                    <!--portfolio starts here -->
+                    <div class="row mb-3">
+                        <div class="offset-md-1 col-md-5 thumbnail text-center">
+                            <a href="assignment_2/Responsive-Portfolio/index.html">
+                                <img class="img-fluid rounded" src="assets/images/portfolio1.jpg" alt="Responsive Portfolio">
+                            </a>
+                            <div class="col-md-12 caption">
+                                <p class="py-3" style="background-color:#4aaaa5;color:#fff">Portfolio 1</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 thumbnail text-center">
+                            <a href="assignment_2/Responsive-Portfolio/index.html">
+                                <img class="img-fluid rounded" src="assets/images/portfolio2.jpg" alt="Responsive Portfolio">
+                            </a>
+                            <div class="offset-md-1 col-md-10 caption offset-md-1">
+                                <p class="py-3 px-2" style="background-color:#4aaaa5; color:#fff">Portfolio 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="offset-md-1 col-md-5 thumbnail text-center">
+                            <a href="assignment_2/Responsive-Portfolio/index.html">
+                                <img class="img-fluid rounded" src="assets/images/portfolio3.jpg" alt="Responsive Portfolio">
+                            </a>
+                            <div class="col-md-12 caption">
+                                <p class="py-3" style="background-color:#4aaaa5;color:#fff">Portfolio 3</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 thumbnail text-center">
+                            <a href="assignment_2/Responsive-Portfolio/index.html">
+                                <img class="img-fluid rounded" src="assets/images/portfolio4.jpg" alt="Responsive Portfolio">
+                            </a>
+                            <div class="offset-md-1 col-md-10 caption offset-md-1">
+                                <p class="py-3 px-2" style="background-color:#4aaaa5; color:#fff">Portfolio 4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-1 col-md-5 thumbnail text-center">
+                            <a href="assignment_2/Responsive-Portfolio/index.html">
+                                <img class="img-fluid rounded" src="assets/images/portfolio5.jpg" alt="Responsive Portfolio">
+                            </a>
+                            <div class="col-md-12 caption">
+                                <p class="py-3" style="background-color:#4aaaa5;color:#fff">Portfolio 5</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 thumbnail text-center">
+                            <a href="assignment_2/Responsive-Portfolio/index.html">
+                                <img class="img-fluid rounded" src="assets/images/portfolio6.jpg" alt="Responsive Portfolio">
+                            </a>
+                            <div class="offset-md-1 col-md-10 caption offset-md-1">
+                                <p class="py-3 px-2" style="background-color:#4aaaa5; color:#fff">Portfolio 6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!--portfolio ends here -->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="my-3 p-3 rounded bg-white border border-info">
+                <h3 class="py-3 pr-3 border-bottom">
+                    <span style="font-size:1em; color:#4aaaa5" class="fas fa-hand-point-right" aria-hidden="true"></span> Connect With Me</h3>
+
+                <a href="https://github.com/green64" target="_blank">
+                    <img src="assets/images/github60.png" class="img-fluid img-thumbnail rounded mt-3" alt="Responsive image My Github profile">
+                </a>
+                <a href="https://www.linkedin.com/in/samantha-mccall-44303a6/" target="_blank">
+                    <img src="assets/images/linked_in60.png" class="img-fluid img-thumbnail rounded ml-2 mt-3" alt="Responsive image My LinkedIn profile">
+                </a>
+                <a href="https://stackexchange.com/users/11996404/s-mccall" target="_blank">
+                    <img src="assets/images/stack60.png" class="img-fluid img-thumbnail rounded ml-2 mt-3" alt="Responsive image My Stack Exchange profile">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color:#777777">
+        <div class="col-md-6 offset-md-3">
+            <p class="p-3 text-center" style="color:lightgray">Copyright @ 2018 Samantha McCall</p>
+        </div>
+    </div>
+    <!-- container close div  -->
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
